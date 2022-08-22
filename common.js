@@ -3,6 +3,11 @@ function callingManagerAndCoachIdByFunction(salary) {
     const managerAndCoachSalaryString = managerAndCoachSalaryFunction.value;
 
     const managerAndCoachSalary = parseFloat(managerAndCoachSalaryString);
+
+    managerAndCoachSalaryFunction.value = '';
+
     return managerAndCoachSalary;
+
+
 
 }
