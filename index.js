@@ -16,4 +16,27 @@ document.getElementById('calculate-player-expenses').addEventListener('click', f
 })
 
 
-// second_calculation_____________________________________________________________________________________________________-
+// second_calculation_____________________________________________________________________________________________________
+
+document.getElementById('calculate-total-cost').addEventListener('click', function () {
+
+
+    const playerExpenses = document.getElementById('set-player-expenses');
+    const playerExpensesString = playerExpenses.innerText;
+    const playerExpensesMoney = parseFloat(playerExpensesString);
+
+
+    const managerSalary = callingManagerAndCoachIdByFunction('manager-salary');
+    const coachSalary = callingManagerAndCoachIdByFunction('coach-salary');
+
+
+
+    const totalCost = playerExpensesMoney + managerSalary + coachSalary;
+
+
+
+
+    const setTotalCost = document.getElementById('total-cost');
+    setTotalCost.innerText = totalCost;
+
+})
