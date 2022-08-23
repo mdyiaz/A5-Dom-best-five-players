@@ -10,7 +10,7 @@ console.log(playersNameArray);
 function displayPlayersName(allName) {
 
     if (playersNameArray.length === 6) {
-        alert('error');
+        alert('You have allready selected 5 players');
         return;
 
     }

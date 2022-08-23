@@ -6,8 +6,10 @@ document.getElementById('calculate-player-expenses').addEventListener('click', f
 
     perPlayerPriceInput.value = '';
 
-
-    const fivePlayersTotalPrice = perPlayerPrice * 5;
+    const listItem = document.querySelectorAll('li');
+    // console.log(listItem);
+    const fivePlayersTotalPrice = perPlayerPrice * listItem.length;
+    console.log(fivePlayersTotalPrice);
 
     const setPlayerExpenses = document.getElementById('set-player-expenses');
     setPlayerExpenses.innerText = fivePlayersTotalPrice;
