@@ -4,6 +4,7 @@
 // playerName______________________________________________________________
 
 const playersNameArray = [];
+console.log(playersNameArray);
 
 
 function displayPlayersName(allName) {
@@ -26,17 +27,17 @@ function displayPlayersName(allName) {
 
 
         const kheloarName = playersNameArray[i].playersName;
-        // console.log(kheloarName);
+        //console.log(kheloarName);
 
-        const ol = document.createElement("ol");
-        ol.innerHTML = `
+        const li = document.createElement('li');
+        li.innerHTML = `
 
-              <li>${kheloarName}</li>
+              ${kheloarName}
 
 
         `;
 
-        playersNameOl.appendChild(ol);
+        playersNameOl.appendChild(li);
 
     }
 
@@ -66,7 +67,7 @@ function setPlayersName(name) {
 
 
 
-// playerName________________________________________________________________________________________
+// playerName Section End________________________________________________________________________________________
 
 
 

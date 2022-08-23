@@ -18,3 +18,7 @@
 .card-section-bg {
     background-color: rgb(26, 24, 24);
 }
+
+.parent-list li {
+    list-style-type: decimal;
+}
